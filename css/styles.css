@@ -58,6 +58,7 @@ body{
 
 .menu__avatar{
 	width: 50px;
+	height: 50px;
 	margin-right: 16px;
 	border-radius: 50%;
 	
@@ -96,11 +97,7 @@ body{
 	color: #B4B4B4;
 }
 
-@media(min-width: 800px) {
-	.container{
-		justify-content: center;
-	}
-}
+
 /**********************Carte ***************/
 .carte {
 	display: flex;
@@ -111,7 +108,7 @@ body{
 	align-items:center;
 	margin-top: 20px;
 }
-.carte_cercle {
+.carte__cercle {
 	display:flex;
 	flex:none;
 	justify-content:center;
@@ -124,7 +121,7 @@ body{
 
 }
 
-.carte_main {
+.carte__main {
 	display: flex;
 	flex:auto;
 	flex-direction: column;
@@ -132,23 +129,43 @@ body{
 	padding-left: 20px;
 
 }
-.carte_icon {
+.carte__icon {
 	width: 50px;
 	height: 50px;
 	flex:none;
 	
 }
 
-.carte_title {
+.carte__title {
 	font-size: 32px;
 	display: block;
 	margin-bottom: 8px;
 }
 
-.carte_description {
+.carte__description {
 	color: #B4B4B4;
 	margin-bottom: 8px;
 }
-.carte_cercle--odd {
+.carte__cercle--odd {
 	background-color: #FEE0DF;
+}
+
+@media(max-width: 600px) {
+	.menu {
+		flex-direction: column-reverse;
+	}
+	.carte {
+		flex-direction: column;
+	}
+	.carte .carte .carte__cercle .carte__icon{
+		padding: 20px;
+	}
+	.carte__main {
+		padding-top: 0;
+		padding-left: 20px;
+	}
+	.title__header .carte__main{
+		text-align: center;
+	}
+	
 }
