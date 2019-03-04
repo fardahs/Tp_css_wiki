@@ -1,0 +1,26 @@
+*{
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	background-color: #FBF8FB;
+}
+
+/**********************MENU***************/
+.menu {
+	border-bottom: 1px solid #EFEFEE;
+	margin: 20px 40px;
+}
+
+.menu__main {
+	display: flex;
+	justify-content: space-between;
+}
+.menu__logo {
+	width: 50px;
+	margin-right: 16px;
+}
+.menu__title{
+	color: #9E999C;
+}
