@@ -19,6 +19,7 @@ body{
 	max-width: 800px;
 	margin: 20px auto;
 	color: #292728;
+	flex-direction: column;
 
 }
 
@@ -62,7 +63,7 @@ body{
 	
 }
 
-/**************************Container**********************/
+/**************************Container**********/
 .title__header {
 	padding: 0 40px;
 	
@@ -75,4 +76,54 @@ body{
 .title__sousTitre {
 	font-size: 20px;
 	color: #B4B4B4;
+}
+
+@media(min-width: 800px) {
+	.container{
+		justify-content: center;
+	}
+}
+/**********************Carte ***************/
+.carte {
+	display: flex;
+	border-radius: 10px;
+	border: 1px solid #EFEFEE ;
+	background-color: white;
+	padding: 20px 40px;
+	align-items:center;
+}
+.carte_cercle {
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	flex:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #E5EFF5;
+	padding-left: 20px;
+
+}
+
+.carte_main {
+	display: flex;
+	flex:auto;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.carte_start {
+	width: 50px;
+	
+}
+
+.carte_title {
+	font-size: 32px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.carte_description {
+	color: #B4B4B4;
+	margin-bottom: 8px;
 }
