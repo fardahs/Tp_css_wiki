@@ -3,24 +3,44 @@
 }
 
 .container {
-	display: flex;
 	background-color: #FBF8FB;
 }
 
 /**********************MENU***************/
 .menu {
+	display: flex;
+	flex-flow: row wrap;
 	border-bottom: 1px solid #EFEFEE;
-	margin: 20px 40px;
+	padding: 20px 40px;
+	background-color: white;
+	
 }
 
 .menu__main {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	flex: auto;
 }
+
 .menu__logo {
 	width: 50px;
 	margin-right: 16px;
+	flex: none;
 }
-.menu__title{
+
+.menu__title {
 	color: #9E999C;
+}
+
+.menu__profile{
+	display: flex;
+	align-items: center;
+}
+
+.menu__avatar {
+	display: flex;
+	width: 50px;
+	margin-right: 16px;
+	border-radius: 50%;
+	border-left: #EFEFEE;
 }
