@@ -1,25 +1,52 @@
 *{
 	box-sizing: border-box;
+	font-family: 'Asap', sans-serif;
+	
 }
 
-.container {
+body{
 	background-color: #FBF8FB;
 }
 
+.header {
+	background-color: white;
+	
+}
+.container {
+	display: flex;
+	flex:auto;
+	background-color: #FBF8FB;
+	max-width: 800px;
+	margin: 20px auto;
+	color: #292728;
+
+}
+
+/*****************************************/
 /**********************MENU***************/
+/*****************************************/
 .menu {
 	display: flex;
 	flex-flow: row wrap;
 	border-bottom: 1px solid #EFEFEE;
-	padding: 20px 40px;
-	background-color: white;
-	
+	color: #9E999C;
 }
+
 
 .menu__main {
 	display: flex;
 	align-items: center;
 	flex: auto;
+	padding: 20px 40px;
+	
+}
+
+
+.menu__profile {
+	display: flex;
+	align-items: center;
+	border-left: 1px solid #EFEFEE;
+	padding: 20px 40px;
 }
 
 .menu__logo {
@@ -28,19 +55,24 @@
 	flex: none;
 }
 
-.menu__title {
-	color: #9E999C;
-}
-
-.menu__profile{
-	display: flex;
-	align-items: center;
-}
-
 .menu__avatar {
-	display: flex;
 	width: 50px;
 	margin-right: 16px;
 	border-radius: 50%;
-	border-left: #EFEFEE;
+	
+}
+
+/**************************Container**********************/
+.title__header {
+	padding: 0 40px;
+	
+}
+.title__main {
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.title__sousTitre {
+	font-size: 20px;
+	color: #B4B4B4;
 }
