@@ -56,11 +56,29 @@ body{
 	flex: none;
 }
 
-.menu__avatar {
+.menu__avatar{
 	width: 50px;
 	margin-right: 16px;
 	border-radius: 50%;
 	
+	
+}
+.avatar::after{
+	width: 24px;
+	height: 24px;
+	right: 0;
+	bottom: -8px;
+	position: absolute;
+	content: '3';
+	background-color: #026AD1;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.avatar {
+	position: relative;
 }
 
 /**************************Container**********/
@@ -102,7 +120,7 @@ body{
 	height:100px;
 	border-radius:50%;
 	background-color: #E5EFF5;
-	padding-left: 20px;
+	
 
 }
 
@@ -111,6 +129,7 @@ body{
 	flex:auto;
 	flex-direction: column;
 	justify-content: center;
+	padding-left: 20px;
 
 }
 .carte_icon {
